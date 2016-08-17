@@ -1,10 +1,24 @@
-//
-//  ArrayReturn.m
-//  test
-//
-//  Created by Trent Hamilton on 8/17/16.
-//  Copyright © 2016 Trent Hamilton. All rights reserved.
-//
+/*
+ 
+USAGE: 
+ 
+ NSArray* arr1 = @[@1.0,@1.0,@3.0];
+ NSArray* arr2 = @[@2.0,@25.0,@1.0];
+ 
+ float range = 10.0;
+ float value = 7.0;
+ 
+[[[ArrayReturn alloc] init] morph:arr1 to:arr2 withRange:range andIncrement:value];
+ 
+RETURNED:
+ 
+ Result (
+ "0.7",
+ "16.8",
+ "1.4"
+ )
+ 
+*/
 
 #import <Foundation/Foundation.h>
 
