@@ -15,7 +15,7 @@
     NSMutableArray* left = [[NSMutableArray alloc] init];
     NSMutableArray* right = [[NSMutableArray alloc] init];
     
-    for (int i=0;i<[sourceArray count];i++) {
+    for (NSInteger i=0;i<[sourceArray count];i++) {
         if (i < pivot) {
             [left addObject:[NSString stringWithFormat:@"%i",i]];
         } else {
@@ -25,7 +25,7 @@
     
     left = [[[left reverseObjectEnumerator] allObjects] mutableCopy];
     
-    unsigned long mo;
+    NSInteger mo;
     if ([left count] > [right count]) {
         mo = [left count];
     } else {
